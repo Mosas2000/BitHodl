@@ -1,0 +1,23 @@
+[project]
+name = "bithodl"
+description = "BitHodl contracts with STX and sBTC support"
+authors = [""]
+telemetry = false
+cache_dir = ".cache"
+
+[contracts.bithodl-vault]
+path = "contracts/clarity/bithodl-vault.clar"
+clarity_version = 1
+
+[contracts.bithodl]
+path = "contracts/clarity/bithodl.clar"
+clarity_version = 1
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
