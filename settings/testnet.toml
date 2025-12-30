@@ -1,0 +1,18 @@
+[network]
+name = "testnet"
+stacks_node_rpc_address = "https://api.testnet.hiro.so"
+
+[accounts.deployer]
+mnemonic = "<your testnet mnemonic phrase here>"
+
+[deployment]
+plan = [
+  { contract = "bithodl-vault", emitter = "deployer" },
+  { contract = "bithodl", emitter = "deployer" }
+]
+
+[contracts.bithodl-vault]
+depends_on = []
+
+[contracts.bithodl]
+depends_on = []
