@@ -298,7 +298,6 @@ export function useSavingsContract(userAddress: string | null) {
     }
   };
 
-  // Withdraw STX from contract with comprehensive error handling
   // Validates user balance, initiates transaction flow, and handles all transaction states
   const withdraw = async (amount: number) => {
     // Check for AppKit wallet connection first
@@ -747,7 +746,6 @@ export function useSavingsContract(userAddress: string | null) {
 
     try {
       // In a real implementation, you would fetch from the Stacks API
-      // For now, we'll use mock data
       const mockSavingsPlan: SavingsPlan = {
         id: 'plan-123',
         amount: 0.1,

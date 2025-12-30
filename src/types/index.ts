@@ -121,7 +121,7 @@ export interface SavingsTransaction {
   blockHeight?: number;
   confirmations?: number;
   fee?: number; // in microSTX
-  btcPrice?: number; // Price of BTC at time of transaction (for DCA)
+  btcPrice?: number; 
   stxBalance?: number; // STX balance after transaction
 }
 
