@@ -66,8 +66,8 @@ clarinet contract deploy --testnet
 3. Update contract addresses in `src/utils/stacks.ts`:
 ```typescript
 export const CONTRACT_ADDRESS = {
-  mainnet: 'YOUR_MAINNET_CONTRACT_ADDRESS',
-  testnet: 'YOUR_DEPLOYED_TESTNET_ADDRESS', // Update this
+  mainnet: 'MAINNET_CONTRACT_ADDRESS',
+  testnet: 'DEPLOYED_TESTNET_ADDRESS',
 };
 ```
 
@@ -80,14 +80,6 @@ npm run build
 
 2. Deploy to your preferred hosting service (Vercel, Netlify, etc.):
 ```bash
-# For Vercel
-npm install -g vercel
-vercel --prod
-
-# For Netlify
-npm install -g netlify-cli
-netlify deploy --prod --dir=dist
-```
 
 3. Configure environment variables:
    - `VITE_STACKS_NETWORK`: Set to 'mainnet' or 'testnet'
