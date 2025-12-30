@@ -4,8 +4,8 @@ export const CONTRACT_ADDRESSES = {
     bitcoinSavings: '', // Testnet contract address - to be filled
   },
   mainnet: {
-    savingsVault: 'SP31PKQVQZVZCK3FM3NH67CGD6G1FMR17VQVS2W5T.bithodl-vault', // Mainnet contract address
-    bitcoinSavings: 'SP31PKQVQZVZCK3FM3NH67CGD6G1FMR17VQVS2W5T.bithodl', // Mainnet contract address
+    savingsVault: 'SP31PKQVQZVZCK3FM3NH67CGD6G1FMR17VQVS2W5T.bithodl-vault',
+    bitcoinSavings: 'SP31PKQVQZVZCK3FM3NH67CGD6G1FMR17VQVS2W5T.bithodl', 
   },
 } as const;
 
