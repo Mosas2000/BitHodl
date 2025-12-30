@@ -193,7 +193,6 @@ export function useWalletMonitor(options: UseWalletMonitorOptions = {}) {
   useEffect(() => {
     if (!walletState.isConnected && lastEvent?.type === 'disconnected') {
       console.warn('Wallet disconnected unexpectedly');
-      // Could trigger a toast notification here
     }
   }, [walletState.isConnected, lastEvent]);
 

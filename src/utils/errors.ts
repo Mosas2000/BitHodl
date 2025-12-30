@@ -1,4 +1,3 @@
-// Error types for better error handling
 export enum ErrorType {
   WALLET_NOT_INSTALLED = 'WALLET_NOT_INSTALLED',
   WALLET_NOT_CONNECTED = 'WALLET_NOT_CONNECTED',

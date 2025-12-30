@@ -67,7 +67,7 @@ export class WalletMonitor {
 
     this.checkInterval = setInterval(() => {
       this.checkWalletState();
-    }, 5000); // Check every 5 seconds
+    }, 5000);
   }
 
   // Stop periodic checks
